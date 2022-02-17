@@ -60,8 +60,8 @@ class ContactController{
 		return contactRepository.getById(id);
 	}
 
-	@PostMapping("/contact")
-	public Contact addContact(@RequestBody Contact contact){
-		return contactRepository.save(contact);
+	@GetMapping("/hi")
+	public String hi(){
+		return "hello world!";
 	}
 }
